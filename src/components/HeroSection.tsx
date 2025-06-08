@@ -17,12 +17,11 @@ export function HeroSection() {
       <p className="text-5xl md:text-8xl font-bold md:max-w-[60vw] mx-auto mt-4 leading-[1.05]">
         Turn your <AuroraText
         colors={["#201502","#5C4D00", "#c0b5ff" ]}
-        >ideas</AuroraText> into binge-worthy
-         <AuroraText
+        >ideas</AuroraText> into binge-worthy <AuroraText
         colors={["#201502","#5C4D00", "#c0b5ff" ]}
         >podcasts</AuroraText> in <AuroraText
         colors={[ "#c0b5ff", "#165bfa", "#201502"]}
-        >minutes</AuroraText>
+        > minutes</AuroraText>
       </p>
 
       <Button
