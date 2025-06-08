@@ -1,5 +1,6 @@
 "use client"
 
+import { JoinWaitlistModal } from '@/components/JoinWaitlistModal';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useEffect } from 'react';
@@ -16,6 +17,7 @@ const Teamplte = ({children}:Props) => {
   return (
     <>
      {children}
+     <JoinWaitlistModal />
     </>
   )
 }
