@@ -8,6 +8,7 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Vocapp. All rights reserved.
         </div>
         <div className="flex space-x-6">
+          <Link href={'/sitemap.xml'} className="text-sm text-gray-500 hover:text-gray-700">Sitemap</Link>
           <Link href={'/contact'} className="text-sm text-gray-500 hover:text-gray-700">Contact</Link>
           <Link href={'/privacy-policy'} className="text-sm text-gray-500 hover:text-gray-700">Privacy policy</Link>
           <Link href={'/terms-conditions'} className="text-sm text-gray-500 hover:text-gray-700">Terms & conditions</Link>
