@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input"
 import useWaitlistStore from "@/store/waitlist"
 import * as React from "react"
+import { toast } from "sonner"
 
 export function JoinWaitlistModal() {
   const [email, setEmail] = React.useState("")
@@ -25,6 +26,7 @@ export function JoinWaitlistModal() {
     e.preventDefault()
     setIsLoading(true)
     setMessage("")
+
 
     try {
       const response = await fetch("/api/join-waitlist", {
@@ -40,7 +42,11 @@ export function JoinWaitlistModal() {
       if (response.ok) {
         setMessage(result.message || "Successfully joined the waitlist!")
         setEmail("") // Clear email field on success
-        // Optionally close the modal after a delay or on user action
+        
+        toast.success("Added to waitlist!", {
+          description: "Please check your email (including spam folder) to confirm your registration.",
+          duration: 5000,
+        })
         setTimeout(() => setOpen(false), 500); 
       } else {
         setMessage(result.message || "An error occurred.")
