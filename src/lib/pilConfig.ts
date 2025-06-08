@@ -2,7 +2,7 @@
 export const pilConfig = {
   companyName: "Vocapp Technologies Pvt. Ltd.",
   address: "",
-  email: "support@vocapp.live",
+  email: "info@vocapp.live",
   website: "https://vocapp.live",
   lastUpdated: "2025-06-07"
 };
