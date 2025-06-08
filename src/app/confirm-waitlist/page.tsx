@@ -67,7 +67,7 @@ async function updateConfirmation(data: string | undefined): Promise<{ success: 
 export default async function ConfirmWaitlistPage({
   searchParams,
 }: {
-  searchParams: { data?: string };
+  searchParams: Promise<{ data?: string }>;
 }) {
   const params = await searchParams;
   const result = await updateConfirmation(params.data);
