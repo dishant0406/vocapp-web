@@ -55,9 +55,6 @@ export const metadata: Metadata = {
     images: ["/og.webp"],
     creator: "@vocapp",
   },
-  verification: {
-    google: "google-site-verification-code",
-  },
   appleWebApp: {
     capable: true,
     title: "Vocapp",
@@ -88,10 +85,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`${inter.className} antialiased`}
       >
         {children}
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="d5716e85-f127-4121-8bd4-d89a728c2ceb"></script>
       </body>
     </html>
   );

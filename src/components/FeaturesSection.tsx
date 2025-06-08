@@ -22,6 +22,7 @@ export function FeaturesSection() {
       </div>
       
       <Button
+      id="join-waitlist-button" data-umami-event="Join Waitlist button"
       onClick={() => setIsOpen(true)}
       data-aos="fade-up" data-aos-offset="0" data-aos-duration="1500" className="mt-28 rounded-full hover:bg-gray-800 font-bold px-15 py-10 text-xl ">
         Join Waitlist

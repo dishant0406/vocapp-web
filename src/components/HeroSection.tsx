@@ -25,7 +25,9 @@ export function HeroSection() {
         >minutes</AuroraText>
       </p>
 
-      <Button onClick={() => setIsOpen(true)} className="mt-10 rounded-full hover:bg-gray-800 font-bold px-10 py-8 text-lg ">
+      <Button
+      id="join-waitlist-button" data-umami-event="Join Waitlist button"
+      onClick={() => setIsOpen(true)} className="mt-10 rounded-full hover:bg-gray-800 font-bold px-10 py-8 text-lg ">
         Join Waitlist
       </Button>
     </section>

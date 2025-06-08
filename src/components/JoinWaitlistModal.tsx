@@ -2,14 +2,14 @@
 
 import { Button } from "@/components/ui/button"
 import {
-    Credenza,
-    CredenzaBody,
-    CredenzaClose,
-    CredenzaContent,
-    CredenzaDescription,
-    CredenzaFooter,
-    CredenzaHeader,
-    CredenzaTitle
+  Credenza,
+  CredenzaBody,
+  CredenzaClose,
+  CredenzaContent,
+  CredenzaDescription,
+  CredenzaFooter,
+  CredenzaHeader,
+  CredenzaTitle
 } from "@/components/ui/credenza"
 import { Input } from "@/components/ui/input"
 import useWaitlistStore from "@/store/waitlist"

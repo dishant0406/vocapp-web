@@ -13,6 +13,7 @@ export function Header() {
       </Link>
       <nav className="flex items-center space-x-8">
         <Button
+        id="join-waitlist-button" data-umami-event="Join Waitlist button"
         onClick={() => setIsOpen(true)}
         className=" h-12  px-6 rounded-full font-bold">
           Join Waitlist
