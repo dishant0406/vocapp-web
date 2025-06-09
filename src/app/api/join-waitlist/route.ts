@@ -52,8 +52,31 @@ async function verifyMxRecords(email: string): Promise<boolean> {
     const blockedDomains = await getBlockedDomains();
     if (blockedDomains.has(domain)) {
       console.log(`Domain ${domain} for email ${email} is on the blocklist.`);
-      return false; // Domain is on the blocklist
+      return false;
     }
+
+    if(email.includes("example")){
+      console.log(`Domain ${domain} for email ${email} is an example domain.`);
+      return false;
+    }
+
+    if(email.includes("test")){
+      console.log(`Domain ${domain} for email ${email} is a test domain.`);
+      return false;
+    }
+    if(email.includes("demo")){
+      console.log(`Domain ${domain} for email ${email} is a demo domain.`);
+      return false;
+    }
+    if(email.includes("localhost")){
+      console.log(`Domain ${domain} for email ${email} is a localhost domain.`);
+      return false;
+    }
+    if(email.includes("invalid")){
+      console.log(`Domain ${domain} for email ${email} is an invalid domain.`);
+      return false;
+    }
+    
   } catch (error) {
     // This catch is primarily for unexpected errors in getBlockedDomains itself,
     // though getBlockedDomains tries to handle its own fetch errors.
