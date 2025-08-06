@@ -9,13 +9,13 @@ export default function TermsConditionsPage() {
         <section>
           <h2 className="text-2xl font-semibold mb-2 mt-4">Acceptance of Terms</h2>
           <p>
-            By accessing or using Vocapp, you agree to be bound by these Terms & Conditions. If you do not agree, please do not use our services.
+            By accessing or using Vocapp, you agree to be bound by these Terms & Conditions. Vocapp is operated by {pilConfig.companyName} as a personal project. If you do not agree to these terms, please do not use our services.
           </p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-2 mt-4">Use of Service</h2>
           <p>
-            You agree to use Vocapp in compliance with all applicable laws. You are responsible for maintaining the confidentiality of your account.
+            Vocapp is an AI-powered podcast creation platform that operates on a credit-based system. You agree to use Vocapp in compliance with all applicable laws and these terms. You are responsible for maintaining the confidentiality of your account and all activities that occur under your account.
           </p>
         </section>
         <section>
@@ -31,21 +31,38 @@ export default function TermsConditionsPage() {
           </p>
         </section>
         <section>
-          <h2 className="text-2xl font-semibold mb-2 mt-4">Subscription & Payments</h2>
-          <p>
-            Some features are available via paid subscription. By subscribing, you agree to the pricing, billing, and renewal terms presented at checkout. All fees are non-refundable except as required by law.
-          </p>
+          <h2 className="text-2xl font-semibold mb-2 mt-4">Credits & Payments</h2>
+          <div className="space-y-4">
+            <p>
+              Vocapp operates on a credit-based system for AI podcast creation:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Credit Purchase:</strong> You can purchase credits to create AI-generated podcasts</li>
+              <li><strong>Credit Usage:</strong> Each credit allows creation of podcasts up to 1 hour in length. Podcasts longer than 1 hour consume 1 additional credit per hour or part thereof</li>
+              <li><strong>Payment Terms:</strong> All credit purchases are final and non-refundable except as outlined in our Cancellation & Refund Policy</li>
+              <li><strong>Credit Validity:</strong> Credits do not expire and remain in your account until used</li>
+              <li><strong>Pricing:</strong> Credit prices are displayed at the time of purchase and may change without notice</li>
+            </ul>
+            <p>
+              By purchasing credits, you agree to the pricing, billing, and terms presented at checkout.
+            </p>
+          </div>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-2 mt-4">Intellectual Property</h2>
-          <p>
-            All content, trademarks, and data on Vocapp are the property of Vocapp Technologies Pvt. Ltd. or its licensors.
-          </p>
+          <div className="space-y-4">
+            <p>
+              All content, trademarks, and data on Vocapp are the property of {pilConfig.companyName} or its licensors.
+            </p>
+            <p>
+              <strong>AI-Generated Content:</strong> You retain ownership of podcasts you create using our AI technology. However, you acknowledge that similar content may be generated for other users due to the nature of AI systems. We do not claim ownership of your generated podcasts, but we reserve the right to use anonymized usage data to improve our services.
+            </p>
+          </div>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-2 mt-4">Third-Party Services</h2>
           <p>
-            Vocapp may integrate with third-party services (e.g., news APIs, payment processors). We are not responsible for the content or practices of these external services.
+            Vocapp may integrate with third-party services including AI providers, payment processors, and content delivery networks. We are not responsible for the content, availability, or practices of these external services. Service interruptions from third-party providers may affect podcast generation but do not entitle users to credit refunds unless specified in our Cancellation & Refund Policy.
           </p>
         </section>
         <section>
@@ -63,7 +80,7 @@ export default function TermsConditionsPage() {
         <section>
           <h2 className="text-2xl font-semibold mb-2 mt-4">Governing Law</h2>
           <p>
-            These Terms & Conditions are governed by the laws of the jurisdiction where Vocapp Technologies Pvt. Ltd. is registered, without regard to conflict of law principles.
+            These Terms & Conditions are governed by applicable laws. For any disputes, you agree to resolve them through good faith communication with {pilConfig.companyName}.
           </p>
         </section>
         <section>
