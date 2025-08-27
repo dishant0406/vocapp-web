@@ -3,9 +3,6 @@
 import Link from "next/link";
 
 export function Footer() {
-  const handlePlayStoreClick = () => {
-    window.open('https://play.google.com/store/apps/details?id=com.dishant.vocapp', '_blank');
-  };
 
   return (
     <footer className="container mx-auto px-4 py-10 border-t border-gray-200 mt-20">

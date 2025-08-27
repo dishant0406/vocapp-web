@@ -1,12 +1,10 @@
 "use client"
 
 import { Button } from "@/components/ui/button";
-import useWaitlistStore from "@/store/waitlist";
 import { Smartphone } from "lucide-react";
 import Link from "next/link";
 
 export function Header() {
-  const {setIsOpen} = useWaitlistStore()
   
   const handlePlayStoreClick = () => {
     window.open('https://play.google.com/store/apps/details?id=com.dishant.vocapp', '_blank');

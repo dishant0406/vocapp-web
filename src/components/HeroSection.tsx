@@ -1,12 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import useWaitlistStore from "@/store/waitlist";
 import Image from "next/image";
 import { AuroraText } from "./magicui/aurora-text";
 
 export function HeroSection() {
-  const {setIsOpen} = useWaitlistStore()
   
   const handlePlayStoreClick = () => {
     window.open('https://play.google.com/store/apps/details?id=com.dishant.vocapp', '_blank');

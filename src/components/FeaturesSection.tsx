@@ -1,10 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import useWaitlistStore from "@/store/waitlist";
 
 export function FeaturesSection() {
-  const {setIsOpen} = useWaitlistStore()
   
   const handlePlayStoreClick = () => {
     window.open('https://play.google.com/store/apps/details?id=com.dishant.vocapp', '_blank');
