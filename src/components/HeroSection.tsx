@@ -7,6 +7,11 @@ import { AuroraText } from "./magicui/aurora-text";
 
 export function HeroSection() {
   const {setIsOpen} = useWaitlistStore()
+  
+  const handlePlayStoreClick = () => {
+    window.open('https://play.google.com/store/apps/details?id=com.dishant.vocapp', '_blank');
+  };
+
   return (
     <section className="container mx-auto px-4 pb-0 py-20 text-center flex flex-col items-center">
       <Image
@@ -24,11 +29,25 @@ export function HeroSection() {
         > minutes</AuroraText>
       </p>
 
-      <Button
-      id="join-waitlist-button" data-umami-event="Join Waitlist button"
-      onClick={() => setIsOpen(true)} className="mt-10 rounded-full hover:bg-gray-800 font-bold px-10 py-8 text-lg ">
-        Join Waitlist
-      </Button>
+      <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center">
+        <Button
+          id="download-app-button" 
+          data-umami-event="Download App button"
+          onClick={handlePlayStoreClick} 
+          className="rounded-full hover:bg-gray-800 font-bold !px-10 py-8 text-lg flex items-center gap-3">
+          Download on Google Play
+        </Button>
+        
+        {/* <Button
+          id="join-waitlist-button" 
+          data-umami-event="Join Waitlist button"
+          onClick={() => setIsOpen(true)} 
+          variant="outline"
+          className="rounded-full font-bold px-10 py-8 text-lg flex items-center gap-3 border-2">
+          <Download className="w-5 h-5" />
+          Still want to join waitlist?
+        </Button> */}
+      </div>
     </section>
   );
 }

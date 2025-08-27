@@ -5,6 +5,11 @@ import useWaitlistStore from "@/store/waitlist";
 
 export function FeaturesSection() {
   const {setIsOpen} = useWaitlistStore()
+  
+  const handlePlayStoreClick = () => {
+    window.open('https://play.google.com/store/apps/details?id=com.dishant.vocapp', '_blank');
+  };
+
   return (
     <section className="container mx-auto px-4 py-20 md:max-w-3/5 flex flex-col items-center">
       <div className="text-center flex flex-col gap-8 md:gap-30 space-y-16">
@@ -21,12 +26,18 @@ export function FeaturesSection() {
         </p>
       </div>
       
-      <Button
-      id="join-waitlist-button" data-umami-event="Join Waitlist button"
-      onClick={() => setIsOpen(true)}
-      data-aos="fade-up" data-aos-offset="0" data-aos-duration="1500" className="mt-28 rounded-full hover:bg-gray-800 font-bold px-15 py-10 text-xl ">
-        Join Waitlist
-      </Button>
+      <div className="mt-28 flex flex-col sm:flex-row gap-4 items-center">
+        <Button
+          id="download-app-features" 
+          data-umami-event="Download App Features"
+          onClick={handlePlayStoreClick}
+          data-aos="fade-up" data-aos-offset="0" data-aos-duration="1500" 
+          className="rounded-full hover:bg-gray-800 font-bold !px-15 py-8 text-xl flex items-center gap-3">
+          Download Now
+        </Button>
+        
+       
+      </div>
     </section>
   );
 }
